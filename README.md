@@ -1,4 +1,4 @@
-Used for generate JetBrains Toolbox `intellij_projects.json` from IDE recent project files.
+Used for generate JetBrains Toolbox `intellij_projects.json` from IDE recent project files. Tested on Windows 10.
 
 ---
 
