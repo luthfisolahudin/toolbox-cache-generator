@@ -25,10 +25,6 @@ class IdeInfo:
 
 
 class Ide(Enum):
-    INTELLIJ_IDEA = IdeInfo(
-        tool_id='IDEA-U',
-        folder_prefix='IntelliJIdea',
-    )
     PHPSTORM = IdeInfo(
         tool_id='PhpStorm',
         folder_prefix='PhpStorm',
@@ -36,6 +32,10 @@ class Ide(Enum):
     RIDER = IdeInfo(
         tool_id='Rider',
         folder_prefix='Rider',
+    )
+    INTELLIJ_IDEA = IdeInfo(
+        tool_id='IDEA-U',
+        folder_prefix='IntelliJIdea',
     )
     ANDROID_STUDIO = IdeInfo(
         tool_id='AndroidStudio',
