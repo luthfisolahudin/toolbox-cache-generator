@@ -170,7 +170,10 @@ def main():
             for project in get_recent_projects(ide, folder):
                 unique_project[project.path] = project
 
-        projects.extend(unique_project.values())
+        sort_unique_project = list(unique_project.values())
+        sort_unique_project.sort(key=lambda item: item.path)
+
+        projects.extend(sort_unique_project)
 
     cache_path = pathlib.Path(toolbox_data_path('cache/intellij_projects.json'))
 
